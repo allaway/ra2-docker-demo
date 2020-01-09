@@ -1,6 +1,6 @@
 # RA2 Docker Demo
 
-The purpose of this repository is to provide a template for creating a Docker image for submission to this challenge, and to provide information about required components of your Docker image for it to be scored correctly. 
+The purpose of this repository is to provide a template for creating a Docker image for submission to this challenge, and to discuss the required components of your Docker image for it to be pass validation and be scored. 
 
 ## Basic Requirements 
 
