@@ -1,6 +1,6 @@
-# RA2 Docker Demo
+# hello-world RA2 DREAM Challenge Docker Demo
 
-The purpose of this repository is to provide a template for creating a Docker image for submission to this challenge, and to discuss the required components of your Docker image for it to be pass validation and be scored. 
+The purpose of this repository is to provide a template for creating a Docker image for submission to this challenge, and to discuss the required components of your Docker image for it to be pass validation and be scored. You can inspect the docker image itself by logging into the Synapse docker repository (`docker login docker.synapse.org`) and pulling the image (`docker pull docker.synapse.org/syn20545111:hello-world`). 
 
 ## Basic Requirements 
 
