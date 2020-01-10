@@ -13,7 +13,8 @@ There are a few basic requirements that your Docker container must have in order
 - Have a defined `ENTRYPOINT` that runs your model (either directly in Python, R, etc, or via a shell script). 
 - Any required scripts must be executable by non-root user (`chmod 755`or `chmod +x`)
 - (GPU Only) Must define `PATHs` to access Cheaha's NVIDIA drivers - this is only necessary if your model requires GPU functionality. See `run.sh` below for more information. 
-
+- Must be tested locally! A good way to do this would be to create a `testing/` directory on your machine. Within this directory, copy a small subset of the training data to create `train/` and `test/` directories on your local machine, and create an `output/` folder as well. Then, from this directory, run:  `docker run -networking="none" -v test/:/test/ -v train/:/train/ -v output/:/output/ your-container-name`
+ 
 ## Files in this repository
 There are three files in this repository that we will define in greater detail below: Dockerfile, run.sh, and model.R. This repository will create a dockerfile that successfully runs on the challenge scoring harness, has GPU access, and produces a prediction file with a "2" for every score.
 
