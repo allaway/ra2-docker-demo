@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # Required to use GPU: Copy and paste the hash-marked section with PATH exports to your run.sh file. This will make 
-# NVIDIA drivers available to your container. Alternatively, you can define these system-wide in the Dockerfile
+# NVIDIA drivers available to your container. 
+# I and others have had issues defining this in the Dockerfile, so I would recommend defining them in run.sh.
 
 ######
 export CUDA_HOME=/cm/local/apps/cuda/libs/current
